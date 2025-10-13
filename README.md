@@ -1,2 +1,2 @@
 # feuermendoza.github.io
-Feuer Menodza landing page
+Feuer Mendoza landing page
