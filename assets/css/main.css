@@ -152,7 +152,7 @@ input, select, textarea {
 		}
 
 	body {
-		background-color: #1f1f22;
+		background-color: #000000;
 		color: #ffffff;
 	}
 
@@ -6870,20 +6870,24 @@ input, select, textarea {
 			display: block;
 			position: relative;
 			overflow: hidden;
-			width: 22.5rem;
+			height: clamp(160px, 60vh, 420px);
+			width: clamp(160px, 28vw, 320px);
 			max-width: 75vw;
 		}
 
 			.gallery.style2 article .image {
 				display: block;
 				width: 100%;
+				height: 100%;
 				border-radius: 0;
 			}
 
 				.gallery.style2 article .image img {
 					display: block;
 					width: 100%;
+					height: 100%;
 					border-radius: 0;
+					object-fit: cover;
 				}
 			/* caption al posicionar el cursor en las imágenes */
 			.gallery.style2 article .caption {
