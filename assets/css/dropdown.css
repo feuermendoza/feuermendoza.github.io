@@ -14,7 +14,7 @@
     background-color: inherit;
     font-family: inherit;
     margin: 0;
-    background-color: #ffcc00; /* Add button color */
+    background-color: #ffc400; /* Add button color */
     border-radius: 4px;        /* Rounded corners */
     cursor: pointer;          /* Hand cursor */
     transition: all 0.3s;     /* Smooth transitions */
@@ -22,14 +22,14 @@
   }
 
   .dropdown .dropbtn:hover {
-    background-color: #6c6e6c; /* Hover color */
+    background-color: #8b7700; /* Hover color */
   }
 
   .dropdown-content {
     font-size: 20px;
     display: none;
     position: absolute;
-    background-color: #ffcc00;
+    background-color: #ffc400;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -47,7 +47,7 @@
   }
   
   .dropdown-content a:hover {
-      background-color: #6c6e6c;
+      background-color: #8b7700;
   }
 
   .dropdown-content.show {
