@@ -1,0 +1,65 @@
+/* contenedor general */
+.container-two-columns {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.section-header h2 {
+    margin: 0 0 0.25rem 0;
+    font-size: 1.75rem;
+}
+
+.section-header .subtitle {
+    margin: 0 0 1.25rem 0;
+    color: #666;
+    font-size: 0.95rem;
+}
+
+/* grid de columnas */
+.columns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    align-items: start;
+}
+
+.card {
+    background: transparent; /* o blanco si querés */
+    padding: 1rem;
+}
+
+.card h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.card ul {
+    margin: 0;
+    padding-left: 1.25rem;
+}
+
+.card li {
+    margin-bottom: 0.35rem;
+}
+
+.column-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 0.75rem;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+/* responsive: en pantallas pequeñas se apila */
+@media (max-width: 768px) {
+    .columns {
+    grid-template-columns: 1fr;
+    }
+
+    .section-header h2 {
+    font-size: 1.5rem;
+    }
+}
