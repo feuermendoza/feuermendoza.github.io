@@ -12,7 +12,7 @@
 
 .section-header .subtitle {
     margin: 0 0 1.25rem 0;
-    color: #666;
+    color: #b8b8b8;
     font-size: 0.95rem;
 }
 
@@ -62,4 +62,15 @@
     .section-header h2 {
     font-size: 1.5rem;
     }
+}
+/* lista de especificaciones de cada equipo */
+.card ul.specs {
+    list-style: none;
+    margin: 1rem 0 0 0;
+    padding: 0;
+    text-align: center;
+}
+
+.card ul.specs li {
+    margin-bottom: 0.6rem;
 }
