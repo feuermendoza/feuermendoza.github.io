@@ -1,20 +1,33 @@
+(function () {
+    var button = document.querySelector('.dropbtn');
+    var menu = document.getElementById('myDropdown');
 
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
+    if (!button || !menu) return;
 
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
+    function setOpen(open) {
+        menu.classList.toggle('show', open);
+        button.setAttribute('aria-expanded', open ? 'true' : 'false');
+    }
+
+    // Toggle the menu when the button (or the icon inside it) is clicked;
+    // any click elsewhere (including a menu link) closes it.
+    document.addEventListener('click', function (event) {
+        if (event.target.closest('.dropbtn')) {
+            setOpen(!menu.classList.contains('show'));
+        } else {
+            setOpen(false);
         }
-    }
-    }
-}
+    });
+
+    // Keyboard support: Enter/Space toggle, Escape closes
+    button.addEventListener('keydown', function (event) {
+        if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            setOpen(!menu.classList.contains('show'));
+        }
+    });
+
+    document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape') setOpen(false);
+    });
+})();
