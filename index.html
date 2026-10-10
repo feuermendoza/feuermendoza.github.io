@@ -48,6 +48,7 @@
 		<link rel="stylesheet" href="assets/css/dropdown.css" />
 		<link rel="stylesheet" href="assets/css/equipment-section.css" />
 		<link rel="stylesheet" href="assets/css/whatsapp-float.css" />
+		<link rel="stylesheet" href="assets/css/hero.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -59,11 +60,11 @@
 				</a>
 				<div class="dropdown-content" id="myDropdown">
 					<a href="#about-us" class="smooth-scroll-middle">Nosotros</a>
-					<a href="#contact" class="smooth-scroll-middle">Contacto</a>
 					<a href="#characteristics" class="smooth-scroll-middle">Equipos</a>
-					<a href="#location" class="smooth-scroll-middle">Ubicación</a>
 					<a href="#gallery" class="smooth-scroll-middle">Galería</a>
 					<a href="#advantages" class="smooth-scroll-middle">¿Por qué elegirnos?</a>
+					<a href="#location" class="smooth-scroll-middle">Ubicación</a>
+					<a href="#contact" class="smooth-scroll-middle">Contacto</a>
 				</div>
 			</div>
 
@@ -76,16 +77,10 @@
 			<div id="wrapper" class="divided">
 
 				<!-- One -->
-					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+					<section class="banner style1 hero-photo orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 						<div class="content">
 							<div style="text-align: center;">
-								<img src="images/logo_500x500.jpeg" alt="Feuer Mendoza - Alquiler de fogones y asadores"
-									style="display: block; margin: auto; 
-									max-width: 500px; 
-									width: 100%; 
-									height: auto;
-									object-fit: contain;"
-								>
+								<img class="hero-logo" src="images/logo_500x500.jpeg" alt="Feuer Mendoza - Alquiler de fogones y asadores" width="500" height="500">
 								<p class="major">Creá momentos únicos alrededor del fuego.</p>
 							</div>
 							<div style="text-align: center;">
@@ -114,29 +109,11 @@
 							</ul>
 						</div>
 						<div class="image">
-							<img loading="lazy" src="images/nosotros.jpg" alt="Fogón de hierro con fuego encendido frente a un lago y montañas de Mendoza" />
+							<img loading="lazy" src="images/gallery/fulls/galeria1.jpg" alt="Fogón encendido al atardecer con personas reunidas bajo una carpa" />
 						</div>
 					</section>
 
 				<!-- Three -->
-					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" id="contact">
-						<div class="content">
-							<h2>Contacto</h2>
-							<p>Podés comunicarte con nosotros por WhatsApp, Instagram o mail.</p>
-							<div class="inner">
-								<ul class="icons">
-									<li><a href="https://wa.me/5492612156981?text=Hola!%20Quisiera%20consultar%20por%20el%20alquiler%20de%20fogones%20y%20asadores." target="_blank" rel="noopener" class="icon brands style2 fa-whatsapp"><span class="label">WhatsApp</span></a></li>
-									<li><a href="https://www.instagram.com/feuermendoza/" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#get-in-touch" class="icon style2 fa-envelope smooth-scroll-middle"><span class="label">Email</span></a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="image">
-							<img loading="lazy" src="images/contacto.JPEG" alt="Tres fogones de hierro sobre un terreno con piedras y pastizales" />
-						</div>
-					</section>
-
-				<!-- Four -->
 				<section id="characteristics" class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
 				<div class="container-two-columns">
 					<header class="section-header">
@@ -171,18 +148,7 @@
 				</section>
 
 				
-				<!-- Five -->
-					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" id="location">
-						<div class="content">
-							<h2>¿Dónde estamos?</h2>
-							<p>Nos podés encontrar en Chacras de Coria, localidad de Luján de Cuyo.</p>
-						</div>
-						<div class="image">
-							<iframe title="Mapa con la ubicación de Feuer Mendoza en Chacras de Coria, Luján de Cuyo" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1673.0659549205154!2d-68.8962109!3d-33.0002976!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0aa2c64c23d3%3A0x940e6f18ffba135c!2sM5505%20Luj%C3%A1n%20de%20Cuyo%2C%20Mendoza!5e0!3m2!1ses!2sar!4v1762800629770!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-						</div>
-					</section>
-
-				<!-- Six -->
+				<!-- Four -->
 					<section class="wrapper style1 align-center" id="gallery">
 						<div class="inner">
 							<h2>Galería de fotos</h2>
@@ -266,7 +232,7 @@
 
 					</section>
 
-				<!-- Seven -->
+				<!-- Five -->
 					<section class="wrapper style1 align-center" id="advantages">
 						<div class="inner">
 							<h2>¿Por qué elegirnos?</h2>
@@ -302,6 +268,35 @@
 									<p>Sos libre de ubicar y montar el equipo como prefieras; incluimos instrucciones y recomendaciones de seguridad para que todo salga perfecto.</p>
 								</section>
 							</div>
+						</div>
+					</section>
+
+				<!-- Six -->
+					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" id="location">
+						<div class="content">
+							<h2>¿Dónde estamos?</h2>
+							<p>Nos podés encontrar en Chacras de Coria, localidad de Luján de Cuyo.</p>
+						</div>
+						<div class="image">
+							<iframe title="Mapa con la ubicación de Feuer Mendoza en Chacras de Coria, Luján de Cuyo" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1673.0659549205154!2d-68.8962109!3d-33.0002976!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0aa2c64c23d3%3A0x940e6f18ffba135c!2sM5505%20Luj%C3%A1n%20de%20Cuyo%2C%20Mendoza!5e0!3m2!1ses!2sar!4v1762800629770!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						</div>
+					</section>
+
+				<!-- Seven -->
+					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="contact">
+						<div class="content">
+							<h2>Contacto</h2>
+							<p>Podés comunicarte con nosotros por WhatsApp, Instagram o mail.</p>
+							<div class="inner">
+								<ul class="icons">
+									<li><a href="https://wa.me/5492612156981?text=Hola!%20Quisiera%20consultar%20por%20el%20alquiler%20de%20fogones%20y%20asadores." target="_blank" rel="noopener" class="icon brands style2 fa-whatsapp"><span class="label">WhatsApp</span></a></li>
+									<li><a href="https://www.instagram.com/feuermendoza/" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#get-in-touch" class="icon style2 fa-envelope smooth-scroll-middle"><span class="label">Email</span></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="image">
+							<img loading="lazy" src="images/contacto.JPEG" alt="Tres fogones de hierro sobre un terreno con piedras y pastizales" />
 						</div>
 					</section>
 
